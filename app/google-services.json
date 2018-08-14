@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "582281699134",
+    "firebase_url": "https://bravvurafirebaseutilss.firebaseio.com",
+    "project_id": "bravvurafirebaseutilss",
+    "storage_bucket": "bravvurafirebaseutilss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582281699134:android:cbdd79fc202a8f24",
+        "android_client_info": {
+          "package_name": "com.example.munchado.bravvurafirebaseutilss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582281699134-jbq9rvo913fo7uu66868vgihk1gttfco.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.munchado.bravvurafirebaseutilss",
+            "certificate_hash": "a7d52fdbe2ea91cc4e3f4786c431caa7ca5f7595"
+          }
+        },
+        {
+          "client_id": "582281699134-f6fkk9dk0aj1u3ha8jlt5fn9evfn7nbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoSaClPbuSOsLFaXlMI2kUqjdWzkqXWEY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582281699134-f6fkk9dk0aj1u3ha8jlt5fn9evfn7nbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
