@@ -15,7 +15,7 @@ import com.example.fblibrery.Utils.InitializeFBUtilsFactory;
 public class MainActivity extends AppCompatActivity {
     TextView textic;
     public boolean isFlag;
-    InitializationUtils initifbana, initifbcrash;
+    InitializationUtils initFbAna, initFbCrashLitics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView ( R.layout.activity_main );
         textic=(TextView) findViewById ( R.id.text_view );
         InitializeFBUtilsFactory initializeUtilsFactory=new InitializeFBUtilsFactory ();
-        initifbana=initializeUtilsFactory.getTargetType ( "FBAL" );
-        initifbcrash=initializeUtilsFactory.getTargetType ( "FBCL" );
-        initifbana.initialize ( getApplicationContext () );
-        initifbcrash.initialize ( getApplicationContext () );
+        initFbAna=initializeUtilsFactory.getTargetType ( "FBAL" );
+        initFbCrashLitics=initializeUtilsFactory.getTargetType ( "FBCL" );
+        initFbAna.initialize ( getApplicationContext () );
+        initFbCrashLitics.initialize ( getApplicationContext () );
 
 
 
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickMe(View View) {
 //        FireBaseAnalytics.postEventforEventTracking ( getClass ().getSimpleName (),"ClickMe","target_id" );
-        initifbana.postEventforEventTracking ( getClass ().getSimpleName (),"ClickMe","target_id" );
+        initFbAna.postEventforEventTracking ( getClass ().getSimpleName (),"ClickMe","target_id" );
         if (isFlag) {
             Toast.makeText ( getApplicationContext (),"Event Successfully Send",Toast.LENGTH_SHORT ).show ();
             isFlag=false;
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             Crashlytics.getInstance ().crash ();
         } catch (Exception e) {
-            initifbcrash.reportException ( e,"crashException" );
+            initFbCrashLitics.reportException ( e,"crashException" );
         }
     }
 

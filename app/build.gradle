@@ -15,9 +15,9 @@ apply plugin: 'io.fabric'
 
 android {
 
-        lintOptions {
-            abortOnError false
-        }
+    lintOptions {
+        abortOnError false
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.munchado.bravvurafirebaseutilss"
