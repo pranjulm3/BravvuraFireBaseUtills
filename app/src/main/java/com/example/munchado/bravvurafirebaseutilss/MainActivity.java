@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean isFlag;
     InitializationUtils initFbAna, initFbCrashLitics;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
